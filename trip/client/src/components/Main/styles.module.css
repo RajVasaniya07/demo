@@ -1,0 +1,343 @@
+/* General Styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+  }
+  
+  /* Main Container */
+  .main_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: Arial, sans-serif;
+	padding: 10px;
+  }
+  
+  /* Navbar */
+  .navbar {
+	width: 100%;
+	height: 70px;
+	background-color: #3bb19b;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar h1 {
+	color: white;
+	font-size: 25px;
+  }
+  
+  .white_btn {
+	border: none;
+	outline: none;
+	padding: 12px 20px;
+	background-color: white;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .white_btn:hover {
+	background-color: #f0f0f0;
+  }
+  
+  /* Form Container */
+  .form_container {
+	width: 100%;
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+	background: #ffffff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+  }
+  
+  .form_container h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #333333;
+  }
+  
+  /* Form Layout */
+  .trip_form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+  }
+  
+  .form_group {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .form_group label {
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #333333;
+  }
+  
+  .form_group input,
+  .form_group select,
+  .form_group textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 14px;
+  }
+  
+  .form_group textarea {
+	resize: none;
+	height: 80px;
+  }
+  
+  .form_group ul {
+	margin-top: 5px;
+	list-style: none;
+	padding: 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background: #fff;
+	max-height: 120px;
+	overflow-y: auto;
+  }
+  
+  .form_group ul li {
+	padding: 8px 10px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+  }
+  
+  .form_group ul li:hover {
+	background-color: #f0f0f0;
+  }
+  
+  /* Submit Button */
+  .submit_btn {
+	background-color: #3bb19b;
+	color: white;
+	padding: 12px;
+	border: none;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+	transition: background-color 0.3s ease;
+  }
+  
+  .submit_btn:hover {
+	background-color: #339987;
+  }
+  
+  .submit_btn:active {
+	background-color: #2d8778;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For mobile devices (up to 600px) */
+  @media (max-width: 600px) {
+	.navbar h1 {
+	  font-size: 20px;
+	}
+  
+	.white_btn {
+	  width: 100%;
+	  padding: 12px 0;
+	}
+  
+	.form_container {
+	  padding: 15px;
+	}
+  
+	.form_container h2 {
+	  font-size: 18px;
+	}
+  
+	.trip_form {
+	  gap: 10px;
+	}
+  
+	.form_group label {
+	  font-size: 14px;
+	}
+  
+	.form_group input,
+	.form_group select,
+	.form_group textarea {
+	  font-size: 14px;
+	  padding: 8px;
+	}
+  
+	.form_group textarea {
+	  height: 100px;
+	}
+  
+	.form_group ul {
+	  max-height: 100px;
+	}
+  
+	.submit_btn {
+	  font-size: 14px;
+	  padding: 10px;
+	}
+  
+	/* For Destination Suggestion */
+	.form_group input[type="text"] {
+	  width: 100%;
+	}
+  }
+  
+  /* For tablets (between 600px and 1024px) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+	.navbar h1 {
+	  font-size: 22px;
+	}
+  
+	.white_btn {
+	  padding: 12px 18px;
+	}
+  
+	.form_container {
+	  padding: 20px;
+	}
+  
+	.form_container h2 {
+	  font-size: 20px;
+	}
+  
+	.trip_form {
+	  gap: 12px;
+	}
+  
+	.form_group label {
+	  font-size: 15px;
+	}
+  
+	.form_group input,
+	.form_group select,
+	.form_group textarea {
+	  font-size: 15px;
+	  padding: 10px;
+	}
+  
+	.form_group textarea {
+	  height: 90px;
+	}
+  
+	.form_group ul {
+	  max-height: 110px;
+	}
+  
+	.submit_btn {
+	  font-size: 15px;
+	  padding: 10px;
+	}
+  
+	.form_group input[type="text"] {
+	  width: 100%;
+	}
+  }
+  
+  /* For larger screens (desktop, above 1024px) */
+  @media (min-width: 1025px) {
+	.navbar h1 {
+	  font-size: 25px;
+	}
+  
+	.white_btn {
+	  padding: 12px 20px;
+	}
+  
+	.form_container {
+	  padding: 25px;
+	}
+  
+	.form_container h2 {
+	  font-size: 22px;
+	}
+  
+	.trip_form {
+	  gap: 15px;
+	}
+  
+	.form_group label {
+	  font-size: 16px;
+	}
+  
+	.form_group input,
+	.form_group select,
+	.form_group textarea {
+	  font-size: 16px;
+	  padding: 12px;
+	}
+  
+	.form_group textarea {
+	  height: 100px;
+	}
+  
+	.form_group ul {
+	  max-height: 120px;
+	}
+  
+	.submit_btn {
+	  font-size: 16px;
+	  padding: 12px;
+	}
+  
+	.form_group input[type="text"] {
+	  width: 100%;
+	}
+  }
+  
+  /* Destination Input */
+  .destination_input_group {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .remove_btn {
+	background-color: #ff4040;
+	color: white;
+	padding: 5px 10px;
+	font-size: 14px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 10px;
+  }
+  
+  .remove_btn:hover {
+	background-color: #e03333;
+  }
+  
+  .add_btn {
+	background-color: #3bb19b;
+	color: white;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+	display: block;
+	width: 100%;
+  }
+  
+  .add_btn:hover {
+	background-color: #35a68d;
+  }
+  

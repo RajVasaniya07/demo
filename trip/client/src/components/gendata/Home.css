@@ -1,0 +1,148 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f0f4f8;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Home Container */
+.home-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Home Header */
+.home-header {
+    background-color: #3bb19b;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Main Section */
+.home-main {
+    margin-top: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.home-main h2 {
+    font-size: 28px;
+    color: #3bb19b;
+    margin-bottom: 20px;
+}
+
+
+/* Paragraph */
+.home-main p {
+    font-size: 18px;
+    color: #555;
+    margin: 15px 0;
+    text-align: left;
+}
+
+/* Button */
+.home-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #3bb19b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.home-btn:hover {
+    background-color: #2d8f7f;
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+    .home-header {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .home-main {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .home-main h2 {
+        font-size: 22px;
+    }
+
+    .home-main p {
+        font-size: 16px;
+    }
+
+    .home-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        width: 100%; /* Full-width button */
+    }
+}
+
+/* Tablet devices (between 600px and 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .home-header {
+        font-size: 22px;
+        padding: 18px;
+    }
+
+    .home-main h2 {
+        font-size: 26px;
+    }
+
+    .home-main p {
+        font-size: 17px;
+    }
+
+    .home-btn {
+        font-size: 15px;
+        padding: 12px 22px;
+    }
+}
+
+/* Large screens (above 1024px) */
+@media (min-width: 1025px) {
+    .home-header {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .home-main {
+        padding: 30px;
+    }
+
+    .home-main h2 {
+        font-size: 28px;
+    }
+
+    .home-main p {
+        font-size: 18px;
+    }
+
+    .home-btn {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+}

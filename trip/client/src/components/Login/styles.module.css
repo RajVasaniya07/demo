@@ -1,0 +1,203 @@
+/* Login Container */
+.login_container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Login Form Container */
+.login_form_container {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Left Section */
+.left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+}
+
+/* Form Container */
+.form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form_container h1 {
+    font-size: 40px;
+    margin-top: 0;
+    color: #333;
+}
+
+/* Input Fields */
+.input {
+    outline: none;
+    border: none;
+    width: 370px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #edf5f3;
+    margin: 5px 0;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Error Message */
+.error_msg {
+    width: 370px;
+    padding: 15px;
+    margin: 5px 0;
+    font-size: 14px;
+    background-color: #f34646;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Right Section */
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3bb19b;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+}
+
+.right h1 {
+    margin-top: 0;
+    color: white;
+    font-size: 40px;
+    align-self: center;
+}
+
+/* Buttons */
+.white_btn,
+.green_btn {
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    background-color: white;
+    border-radius: 20px;
+    width: 180px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.white_btn:hover,
+.green_btn:hover {
+    background-color: #f0f0f0;
+}
+
+.green_btn {
+    background-color: #3bb19b;
+    color: white;
+    margin: 10px;
+}
+
+/* Responsive Styling */
+
+/* For mobile devices (up to 600px) */
+@media (max-width: 600px) {
+    .login_form_container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .left {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form_container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .error_msg {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .green_btn {
+        width: 100%;
+    }
+}
+
+/* For tablets (between 600px and 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .login_form_container {
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .error_msg {
+        width: 100%;
+    }
+
+    .green_btn {
+        width: 100%;
+    }
+}
+
+/* For larger screens (desktop, above 1024px) */
+@media (min-width: 1025px) {
+    .login_form_container {
+        flex-direction: row;
+        width: 900px;
+        height: 500px;
+    }
+
+    .left {
+        flex: 2;
+    }
+
+    .right {
+        flex: 1;
+    }
+}

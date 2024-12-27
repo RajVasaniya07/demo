@@ -1,0 +1,210 @@
+/* Signup Page Styles */
+
+.signup_container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Signup Form Container */
+.signup_form_container {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+                0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+/* Left Section */
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3bb19b;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.left h1 {
+    margin-top: 0;
+    color: white;
+    font-size: 35px;
+    align-self: center;
+}
+
+/* Right Section */
+.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_container h1 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+/* Input Fields */
+.input {
+    outline: none;
+    border: none;
+    width: 370px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #edf5f3;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Error and Success Messages */
+.error_msg,
+.success_msg {
+    width: 370px;
+    padding: 15px;
+    margin: 5px 0;
+    font-size: 14px;
+    background-color: #f34646;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.success_msg {
+    background-color: #5cdd5c;
+}
+
+/* Buttons */
+.white_btn,
+.green_btn {
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    background-color: white;
+    border-radius: 20px;
+    width: 180px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.green_btn {
+    background-color: #3bb19b;
+    color: white;
+    margin: 10px;
+}
+
+/* Responsive Styles */
+
+/* For mobile devices (up to 600px) */
+@media (max-width: 600px) {
+    .signup_form_container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left h1 {
+        font-size: 28px;
+    }
+
+    .form_container h1 {
+        font-size: 30px;
+    }
+
+    .input {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .error_msg,
+    .success_msg {
+        width: 90%;
+    }
+
+    .green_btn,
+    .white_btn {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+/* For tablets (between 600px and 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .signup_form_container {
+        width: 80%;
+        height: auto;
+    }
+
+    .left {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form_container h1 {
+        font-size: 35px;
+    }
+
+    .input {
+        width: 85%;
+        font-size: 15px;
+    }
+
+    .green_btn,
+    .white_btn {
+        width: 85%;
+        font-size: 15px;
+    }
+}
+
+/* For larger screens (desktop, above 1024px) */
+@media (min-width: 1025px) {
+    .signup_form_container {
+        width: 900px;
+        height: 500px;
+    }
+
+    .input {
+        width: 370px;
+        font-size: 14px;
+    }
+
+    .green_btn,
+    .white_btn {
+        width: 180px;
+        font-size: 14px;
+    }
+}

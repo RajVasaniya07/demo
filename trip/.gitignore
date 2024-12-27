@@ -1,0 +1,36 @@
+# Node modules for both client and server
+client/node_modules/
+server/node_modules/
+
+# Environment variables
+client/.env
+server/.env
+
+# Logs
+client/logs/
+server/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+*.swp
+
+# Build and deployment directories
+client/build/
+server/dist/
+
+# Coverage reports
+client/coverage/
+server/coverage/
+
+# Temporary files
+*.tmp
+*.temp

@@ -1,0 +1,123 @@
+/* Home Page Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f0f4f8;
+}
+
+/* Home Container */
+.home-container {
+    text-align: center;
+    padding: 0;
+}
+
+/* Home Header */
+.home-header {
+    background-color: #3bb19b;
+    color: white;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+/* Main Section */
+.home-main {
+    margin-top: 50px;
+}
+
+/* Heading */
+.home-main h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+/* Paragraph */
+.home-main p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Button */
+.home-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3bb19b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #339987;
+}
+
+/* Responsive Styles */
+
+/* For mobile devices (up to 600px) */
+@media (max-width: 600px) {
+    .home-header {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    .home-main h2 {
+        font-size: 22px;
+    }
+
+    .home-main p {
+        font-size: 16px;
+    }
+
+    .home-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+        width: 100%;
+    }
+}
+
+/* For tablets (between 600px and 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .home-header {
+        font-size: 22px;
+        padding: 18px 0;
+    }
+
+    .home-main h2 {
+        font-size: 26px;
+    }
+
+    .home-main p {
+        font-size: 17px;
+    }
+
+    .home-btn {
+        font-size: 15px;
+        padding: 9px 18px;
+    }
+}
+
+/* For larger screens (desktop, above 1024px) */
+@media (min-width: 1025px) {
+    .home-header {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+
+    .home-main h2 {
+        font-size: 28px;
+    }
+
+    .home-main p {
+        font-size: 18px;
+    }
+
+    .home-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
